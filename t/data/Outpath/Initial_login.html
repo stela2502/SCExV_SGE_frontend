@@ -1,0 +1,385 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>HTpcrA</title>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+  <style type="text/css">
+
+/* My CSS */
+
+#tab20100 {
+width:20%;
+}
+#tab4050 {
+width:40%;
+min-height:47%;
+}
+
+#logo {
+	position: relative;
+	top: 7px;
+}
+
+#headerBar{
+width= 100%;
+height= 100px;
+background-color: #e3e6ea;
+border-width: 1px;
+border-style: solid;
+border-color:  #e3e6ea;
+#marigin-top= -10px;
+#margin-bottom: -10px;
+}
+
+
+.resizableContainer {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+   resize: both;
+   overflow: auto; 
+   color:#FFFFFF; 
+   background: white; 
+   width: 100px;
+   height:70px;
+   padding: 10px;
+   display:inline;
+   float:left;
+}
+
+#disabled
+{
+	color:#ff3636;
+	background-color:  white;
+}
+
+#warning{
+	color:#FF3300;
+	background-color:#FFFF00;
+g}
+
+#analyse{
+float:right;
+} 
+
+#centered
+{ 
+text-align: center;
+}
+
+#sidebar {
+float:left;
+width:220px;
+padding:5px;
+background:#e3e6ea;
+
+}
+	
+#sidebarEntry{
+   background-color: #ffffff;
+   margin-bottom: 15px;
+   margin-top: 15px;
+   width: 100%;
+}
+
+#horizontalLine{
+	background-color: white;
+	width: 100%;
+	height: 1px;
+
+}
+div,p,ul,li,td, td p {
+  font-family: Arial,Verdana,Sans-Serif;
+  font-size: 14px;
+}
+
+#error{
+	float: left
+	top: 0
+}
+#message {
+	color: red;
+}
+
+#formName{
+	font-weight:bold;
+	padding: 10px 5px 3px 5px;
+}
+	
+#footer {
+    text-align: center;
+    bottom: 0;
+    float: right;
+    width: 19.5%;
+}
+#header {
+    background-color: #e3e6ea;
+#    border-bottom: 1px solid #f08900;
+    top: 0%;
+}
+body {
+    width: 100%;
+    background-color: ;
+    color: #46494c;
+}
+
+#content {
+	position:relative;
+    margin: 1px auto;
+    background-color:  ;
+    color: ;
+#    border-right-color: #f08900;
+#    border-left-color: #f08900;
+#    border-right-style: solid;
+#    border-left-style: solid;
+    width: 1200px;
+ #   height: 100%;
+}
+
+
+
+<!--- MENUE stlyes comming from http://www.mortox.de/typo3-tipps/typoscript-sammlung/dropdown-menue.html -->
+
+#px40 {
+float: left;
+text-align: left;
+height:50px;
+}
+
+#menu {
+        background-color: #e3e6ea;
+        float: left;
+        padding: 20px;
+   #     position: relative;
+        height: 50px;
+        text-align: right;
+}
+
+ul.menu, ul.menu ul {
+    list-style-type: none;
+}
+
+ul.menu a {
+	 color: #c0c0c0;##000000;
+    display: block;
+    padding: 3px 10px 3px 10px;
+    font-weight:bold;
+}
+
+ul.menu ul a {
+    padding: 0 10px;
+}
+
+ul.menu li {
+    padding:0;
+    margin:0;
+    background-image: none;
+    background-color: #e3e6ea;
+    float:left;
+}
+
+ul.menu ul {
+    margin-left:0;
+    padding: 0 0 5px 0;
+    position: absolute;
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+    display:none;
+    min-width:180px;
+}
+
+/* IE-Hack für die Breite */
+*html ul.menu ul {
+    width:180px;
+}
+
+/* Dies sind die Klassenstile für das Untermenü wenn sich die Maus */
+/* über der Liste  befindet (.hover siehe JavaScript oben) */
+ul.menu ul.hover, ul.menu li.hover ul, ul.menu li:hover ul  {
+    display:block;
+    background-color: #c0c0c0;
+    text-align: left;
+    z-index: 99;
+    opacity:1;
+    filter:alpha(opacity=85); /* For IE8 and earlier */
+}
+
+
+ul.menu ul li {
+    float:none;
+    background-color:  white; #c0c0c0;
+    color:  #000000;
+    text-align: left;
+    z-index: 99;
+    opacity:1;
+    filter:alpha(opacity=85); /* For IE8 and earlier */
+}
+
+  </style>
+  <script type="text/javascript" src="/scripts/scrapbook.js"></script>
+  
+  
+  <tmpl_var js-head>
+  
+ </head>
+ <body >
+ 
+<div id="header"><!-- BEGIN site/header -->
+<!-- <h1 class="title"><a href="http://localhost/">HTpcrA</a></h1> -->
+
+<script type="text/javascript">
+    //<![CDATA[
+  function show(element){
+           element.className += "hover";
+   }
+ function hide(element){
+           element.className = element.className = "";
+     }
+    //]]>
+</script>
+
+<!-- END site/header -->
+
+</div>
+
+<div id="headerBar"> 
+
+<div id="content">
+<table border = 0 width = 100%>
+<tr><td valign="middle"><h1 class="title"><a href="http://localhost/"><img id='logo' style="border:0px;" src="http://localhost/static/images/NGS_Pipeline_logo.gif"/; width =300px; ></a></h1></td>
+<td valign="middle">
+
+<div id="px40">
+<!-- BEGIN site/menu -->
+  <ul class="menu">
+  
+  
+  
+    
+    <li onmouseover="show(this)" onmouseout="hide(this)" >
+  	  <a onfocus="blurLink(this);" style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/start/">Upload fastq</a>
+  	    <ul class="submenu" onmouseover="show(this)" onmouseout="hide(this)" >
+  	  	
+        </ul>
+    </li>
+    
+  
+  
+    
+    <li onmouseover="show(this)" onmouseout="hide(this)" >
+  	  <a onfocus="blurLink(this);" style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/experiments/index">Jobs</a>
+  	    <ul class="submenu" onmouseover="show(this)" onmouseout="hide(this)" >
+  	  	
+        </ul>
+    </li>
+    
+  
+  
+    
+    <li onmouseover="show(this)" onmouseout="hide(this)" >
+  	  <a onfocus="blurLink(this);" style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/administration/index">Administration</a>
+  	    <ul class="submenu" onmouseover="show(this)" onmouseout="hide(this)" >
+  	  	
+          <li><a style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/administration/AddUser/">AddUser</a> </li>
+        
+        </ul>
+    </li>
+    
+  
+</ul>
+
+</div>
+<!-- END site/menu -->
+
+</td>
+<td align="right"> 
+ <div id="userinfo">
+	   
+	   <ul class="menu">
+    	   <li onmouseover="show(this)" onmouseout="hide(this)" >
+        	  <a onfocus="blurLink(this);" style="color: #7d7c7c; text-decoration: none;" >Logged in as med-sal</a>
+     	      <ul class="submenu" onmouseover="show(this)" onmouseout="hide(this)" >
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/administration/ModifyUser/"> Account</a> </li>
+                 
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="http://localhost/logout">Log out</a> </li>
+              </ul>
+          </li>
+        </ul>
+	   
+	</div>
+</td></tr>
+</table>
+
+</div>
+</div>
+
+
+<div id="content">
+
+
+
+
+
+<table border = 0 width = 100%>
+<tr><td colspan="3"> <div id="header"></div>
+
+
+</td></tr>
+<tr>
+
+
+<td id='tab20100', valign='top'>
+
+</div>
+<div id="sidebar">
+
+</div>
+
+
+
+<div id='message'>  </div>
+
+
+</td><td id='tab4050'>
+
+<h1>Start Page for the NGS_Pipeline web tool</h1>
+<p>The purpose of this web page is to enable you to check your NGS data quickly. We intend to give you exactly one option to process your input 
+fastq files from start to end and you will be presented with the fastqc results and a UCSC enabled dataset where you can inspect your mapping results.
+If the data should not look as you expect them to look please feal free to contact us to help with a more specific alignement procedure that takes your experimental set up in account.
+</p> 
+<p>This tool is not meant to be a swiss knive for NGS analysis, but a rather blunt first quick inspection tool.</p
+
+</td></tr>
+
+</table>
+
+</td><td id='tab20100'>
+
+</td>
+
+</tr><tr>
+
+
+
+
+
+</table>
+
+</div>
+
+<div id="footer"><!-- BEGIN site/footer -->
+<!-- <div id="copyright">&copy; 2014 Dr. Stefan Lang</div> -->
+<!-- END site/footer -->
+
+<!--
+<a href="/profile_sl/stop_profiling" > Stop Profiling</a> 
+-->
+</div>
+
+<!-- replace this file with your piwik configuration --> 
+
+ 
+
+</body>
+</html>

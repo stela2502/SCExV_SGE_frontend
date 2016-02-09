@@ -1,0 +1,210 @@
+
+/* My CSS */
+
+#tab20100 {
+width:20%;
+}
+#tab4050 {
+width:40%;
+min-height:47%;
+}
+
+#logo {
+	position: relative;
+	top: 7px;
+}
+
+#headerBar{
+width= 100%;
+height= 100px;
+background-color: [% site.col.head %];
+border-width: 1px;
+border-style: solid;
+border-color:  [% site.col.head %];
+#marigin-top= -10px;
+#margin-bottom: -10px;
+}
+
+
+.resizableContainer {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+   resize: both;
+   overflow: auto; 
+   color:#FFFFFF; 
+   background: white; 
+   width: 100px;
+   height:70px;
+   padding: 10px;
+   display:inline;
+   float:left;
+}
+
+#disabled
+{
+	color:#ff3636;
+	background-color:  white;
+}
+
+#warning{
+	color:#FF3300;
+	background-color:#FFFF00;
+g}
+
+#analyse{
+float:right;
+} 
+
+#centered
+{ 
+text-align: center;
+}
+
+#sidebar {
+float:left;
+width:220px;
+padding:5px;
+background:[% site.col.head %];
+
+}
+	
+#sidebarEntry{
+   background-color: #ffffff;
+   margin-bottom: 15px;
+   margin-top: 15px;
+   width: 100%;
+}
+
+#horizontalLine{
+	background-color: white;
+	width: 100%;
+	height: 1px;
+
+}
+div,p,ul,li,td, td p {
+  font-family: Arial,Verdana,Sans-Serif;
+  font-size: 14px;
+}
+
+#error{
+	float: left
+	top: 0
+}
+#message {
+	color: red;
+}
+
+#formName{
+	font-weight:bold;
+	padding: 10px 5px 3px 5px;
+}
+	
+#footer {
+    text-align: center;
+    bottom: 0;
+    float: right;
+    width: 19.5%;
+}
+#header {
+    background-color: [% site.col.head %];
+#    border-bottom: 1px solid [% site.col.line %];
+    top: 0%;
+}
+body {
+    width: 100%;
+    background-color: [% site.col.body.bgcolor %];
+    color: [% site.col.text %];
+}
+
+#content {
+	position:relative;
+    margin: 1px auto;
+    background-color:  [% site.col.content.bgcolor %];
+    color: [% site.col.content.color %];
+#    border-right-color: [% site.col.line %];
+#    border-left-color: [% site.col.line %];
+#    border-right-style: solid;
+#    border-left-style: solid;
+    width: 1200px;
+ #   height: 100%;
+}
+
+
+
+<!--- MENUE stlyes comming from http://www.mortox.de/typo3-tipps/typoscript-sammlung/dropdown-menue.html -->
+
+#px40 {
+float: left;
+text-align: left;
+height:50px;
+}
+
+#menu {
+        background-color: [% site.col.head %];
+        float: left;
+        padding: 20px;
+   #     position: relative;
+        height: 50px;
+        text-align: right;
+}
+
+ul.menu, ul.menu ul {
+    list-style-type: none;
+}
+
+ul.menu a {
+	 color: #c0c0c0;##000000;
+    display: block;
+    padding: 3px 10px 3px 10px;
+    font-weight:bold;
+}
+
+ul.menu ul a {
+    padding: 0 10px;
+}
+
+ul.menu li {
+    padding:0;
+    margin:0;
+    background-image: none;
+    background-color: [% site.col.head %];
+    float:left;
+}
+
+ul.menu ul {
+    margin-left:0;
+    padding: 0 0 5px 0;
+    position: absolute;
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+    display:none;
+    min-width:180px;
+}
+
+/* IE-Hack für die Breite */
+*html ul.menu ul {
+    width:180px;
+}
+
+/* Dies sind die Klassenstile für das Untermenü wenn sich die Maus */
+/* über der Liste  befindet (.hover siehe JavaScript oben) */
+ul.menu ul.hover, ul.menu li.hover ul, ul.menu li:hover ul  {
+    display:block;
+    background-color: #c0c0c0;
+    text-align: left;
+    z-index: 99;
+    opacity:1;
+    filter:alpha(opacity=85); /* For IE8 and earlier */
+}
+
+
+ul.menu ul li {
+    float:none;
+    background-color:  white; #c0c0c0;
+    color:  #000000;
+    text-align: left;
+    z-index: 99;
+    opacity:1;
+    filter:alpha(opacity=85); /* For IE8 and earlier */
+}

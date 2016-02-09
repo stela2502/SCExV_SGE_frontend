@@ -1,0 +1,14 @@
+[% META title = "404 Not Found" %]
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3c.ord/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns=" http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<p>We could not find the page you were looking for
+[% IF missing %]
+	( [% missing %] )
+[%END %]
+.<BR>
+
+Maybe you want to restart at <a href="/[% Catalyst.uri_for() %]">go home</a> instead?
+</p>

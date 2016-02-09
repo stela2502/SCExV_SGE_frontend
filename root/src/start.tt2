@@ -1,0 +1,34 @@
+
+<td id='tab20100', valign='top'>
+
+</div>
+<div id="sidebar">
+
+</div>
+
+
+
+<div id='message'> [% message | html %] </div>
+
+
+</td><td id='tab4050'>
+
+<h1>Start Page for the NGS_Pipeline web tool</h1>
+<p>The purpose of this web page is to enable you to check your NGS data quickly. We intend to give you exactly one option to process your input 
+fastq files from start to end and you will be presented with the fastqc results and a UCSC enabled dataset where you can inspect your mapping results.
+If the data should not look as you expect them to look please feal free to contact us to help with a more specific alignement procedure that takes your experimental set up in account.
+</p> 
+<p>This tool is not meant to be a swiss knive for NGS analysis, but a rather blunt first quick inspection tool.</p
+
+</td></tr>
+
+</table>
+
+</td><td id='tab20100'>
+
+</td>
+
+</tr><tr>
+
+
+

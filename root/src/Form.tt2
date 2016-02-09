@@ -1,0 +1,22 @@
+
+<td id='tab20100', valign='top'>
+
+<div id="sidebar">
+
+ [% form.render %]
+ 
+ 
+[% description %]
+
+<div id='message'> [% message | html %] </div>
+
+</div>
+</td><td id='tab4050'>
+
+ [% text %]
+ 
+ 
+
+ 
+
+</td></tr><tr>

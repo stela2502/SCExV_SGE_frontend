@@ -1,0 +1,36 @@
+[% META title = 'I have a message for you' %]
+
+<td id='tab20100', valign='top'>
+
+</div>
+<div id="sidebar">
+
+[% IF error %]
+<p><span class="error">[% error | html %]</span></p>
+</p>
+[% END %]
+</div>
+
+[% IF title %]
+	<h1 class="title">[% title | html %]</h1>
+[% END %]
+
+</td><td id='tab4050'>
+
+<p>
+  <p><span class="message">[% message | html %]</span></p>
+</p>
+
+[% IF text %]
+<p>
+  <BR> <p><span class="text">[% text%]</span></p>
+</p>
+[% END %]
+
+[% IF c.session.back_2 %]
+  <a href="[% c.session.back_2 %]"> Go back? </a>
+[% END %]
+
+</td>
+
+</tr><tr>

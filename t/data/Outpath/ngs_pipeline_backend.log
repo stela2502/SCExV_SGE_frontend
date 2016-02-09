@@ -1,0 +1,105 @@
+2015-06-22 11:17:55: ngs_pipeline_backend started (PID=1110)
+perl  -I /storage/www/Genexpress/lib/ -I /home/stefan/LibsNewStructure/lib/  /home/slang/workspace/NGS_pipeline/bin/ngs_pipeline_backend.pl -root_path /home/slang/workspace/NGS_pipeline/t/data/Outpath/ -dbh_definition /home/slang/dbh_config.xls -frequency 1 -log_file /home/slang/workspace/NGS_pipeline/t/data/Outpath/ngs_pipeline_backend.log
+2015-06-22 11:17:58:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:17:59:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:00:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:01:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:02:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:03:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:05:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:06:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:07:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:08:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:09:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:10:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:11:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:12:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:13:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:14:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:15:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:16:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:17:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:18:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:19:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:20:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:21:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:22:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:23:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:24:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:25:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:26:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:27:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:28:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:29:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:30:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:31:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:32:qsub process failed: Password: su: Authentication failure
+
+2015-06-22 11:18:32:qsub process failed: Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+Password: su: Authentication failure
+

@@ -1,0 +1,13 @@
+.svn
+blib/
+old_version/
+output/
+Outpath/
+fluidigm_auto/
+.*.Rout
+.*tar.gz
+tdata/
+tmp/
+save.xls
+root/users/
+test.pl

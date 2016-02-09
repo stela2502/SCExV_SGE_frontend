@@ -1,0 +1,73 @@
+<tmpl_var form-start>
+ 
+<div id="horizontalLine"></div>
+<span id="formName">Add the FASTQ files:</span>
+
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/fastq1/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+ <input type="file" id="fastq1" name="fastq1" multiple/>
+
+
+<span id="formName">Add paired FASTQ files (optional):</span>
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/fastq2/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+ <input type="file" id="fastq2" name="fastq2" multiple/>
+
+  <p>Sorting Key for the FASTQ files:</p>
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/orderKey/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-orderKey></span></BR>
+
+
+<div id="horizontalLine"></div>
+	<p></p>
+    <span id="formName">Additional information about your dataset:</span>
+    
+    <p>Theprogram to align the reads:
+    <a href="#" onClick="MyWindow=window.open('/help/index/root/start/program/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-program></span></BR>
+</p>
+    <p>The organism of the sample:
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/organism/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-organism></span></BR>
+</p>
+<p>The genome Version to use:
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/version/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-version></span></BR>
+</p><p>The celltype you have used:
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/celltype/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-celltype></span></BR>
+</p><p>The type of input material you have used:
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/type/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-type></span></BR>
+</p><p>A label for this group:
+<a href="#" onClick="MyWindow=window.open('/help/index/root/start/group/','MyWindow',
+ 'width=500,heig‌​ht=500'); return false;" id="analyse" name="analyse">
+	<img style="border:0px;" src="/static/images/Questions.gif"/ width =20px></a> 
+</BR>
+<span id="formField"><tmpl_var field-group></span></BR>
+</p>
+
+  <tmpl_var form-submit>
+<tmpl_var form-end>

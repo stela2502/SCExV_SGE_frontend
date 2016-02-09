@@ -1,0 +1,29 @@
+A plugin needs to define a Controller in the namespace NGS_pipeline::Controller::<YourPlugin>
+
+This controller store its templates in a subfolder using the controller name.
+The main functionallity of this server is to submit jobs to the sun grid engine.
+
+To keep the security high, the server offers a login for users.
+Each action of your controller has to check whether the user is registered by using the $c->check_user() function.
+
+The basic logics in the server is:
+(1) the controller shows a web page that asks several options from the user.
+(2) upon submit, the controller creates a SGE script and stores that in the  $c->session_path()."script/" .<scriptname>
+(3) the script has to be registered on the system by calling:
+$work_id = $c->model('work')->AddDataset({
+'username' => $c->user(),
+'module'   => <The module name>,
+'info1'    => <Some interesting info about this run>,
+'info2'    => <Some more interesting info about this run>,
+'script' => <the absolute location of the script>,
+});
+(4) in addition to this script workload the module should also populate the outfile table using this:
+
+$c->model('ofile')->AddFiles( $work_id, $files );
+with files being a hash like that:
+{ 'html' => [ <file A>, <file B>], 'text' => <file C>, 'your type' => <file D> }
+
+The existence of these files will be checked after the SGE run and all files will become available for download.
+
+(5) If you want to make the files accessible using your own controller, you need to register the actions with the database upon plugin installation using the class
+stefans_libs::database::otype_2_CatalystAction -> AddDataset ( 'type' => 

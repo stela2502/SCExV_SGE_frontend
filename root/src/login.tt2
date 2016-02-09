@@ -1,0 +1,49 @@
+
+
+<td id='tab20100', valign='top'>
+
+<div id="sidebar">
+
+
+ 
+ [%IF error %]
+  <p><span class="error">[% error | html %]</span></p>
+[% END %]
+[% IF message %]
+  <p><span class="message"> [% message | html %]</span></p>
+[% END %]
+
+[% IF news.size > 0 %]
+<hr>
+
+<p>We have some news concerning this web page!</p>
+
+[% FOREACH data IN news %]
+	<p>[% data.date %]</p>
+	[% array = data.notes %]
+	
+	[% FOREACH note IN array %]
+		<h3>[% note.title %]</h3>
+		<p>[% note.text %]</p>
+	[% END %]
+[% END %]
+
+[% END %]
+
+
+
+<div id='message'> [% message | html %] </div>
+
+</div>
+
+</td><td id='tab4050'>
+
+<p> Please log in using your username and password!</p>
+
+[% description %]
+
+ [% form.render %]
+ 
+</td></tr><tr>
+
+

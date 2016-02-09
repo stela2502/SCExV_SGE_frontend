@@ -1,0 +1,87 @@
+<div id="header">[% PROCESS site/header %]
+</div>
+
+<div id="headerBar"> 
+
+<div id="content">
+<table border = 0 width = 100%>
+<tr><td valign="middle"><h1 class="title"><a href="[%c.uri_for('/') %]"><img id='logo' style="border:0px;" src="[% c.uri_for('/static/images/NGS_Pipeline_logo.gif') %]"/; width =300px; ></a></h1></td>
+<td valign="middle">[% PROCESS site/Menu %]</td>
+<td align="right"> 
+ <div id="userinfo">
+	   [% IF c.user %]
+	   <ul class="menu">
+    	   <li onmouseover="show(this)" onmouseout="hide(this)" >
+        	  <a onfocus="blurLink(this);" style="color: #7d7c7c; text-decoration: none;" >Logged in as [% c.user %]</a>
+     	      <ul class="submenu" onmouseover="show(this)" onmouseout="hide(this)" >
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="[% c.uri_for('/administration/ModifyUser/') %]"> Account</a> </li>
+                 [% IF c.user.has_role('admin') %]
+                 
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="[% c.uri_for('/administration/AddUser/') %]"> Account</a> </li>
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="[% c.uri_for('/administration/Admin_User_Interface/') %]"> Account</a> </li>
+                 
+                 [% END %]
+                 <li><a style="color: #7d7c7c; text-decoration: none;"  href="[% c.uri_for('/logout') %]">Log out</a> </li>
+              </ul>
+          </li>
+        </ul>
+	   [% ELSE %]
+	   Not logged in - <a href="[% c.uri_for('/login') %]">Log in</a>
+	   [% END %]
+	</div>
+</td></tr>
+</table>
+
+</div>
+</div>
+
+
+<div id="content">
+
+[% IF ERROR %]
+
+<table border = 2 width = 100% bgcolor="yellow" bordercolor=red >
+
+[% FOREACH error IN ERROR %]
+<tr><td> [% error  %] </td><tr>
+
+[% END %]
+
+</table>
+
+[% END %]
+
+[% UNLESS c.session.known %]
+
+<table border = 2 width = 100% bgcolor="white" bordercolor=red >
+<tr><td> 
+<b>This page uses cookies that contain a unique identifier for one session. Without cookies you will not be able to use this page. No tracking!</b></br>
+<b>This page relies heavily on javascript - so please activate it.</b></br>
+
+
+<p>If you use this page we assume you accepted the requirements. </p> 
+
+</td></tr> </table>
+
+[% END %]
+
+<table border = 0 width = 100%>
+<tr><td colspan="3"> <div id="header"></div>
+
+
+</td></tr>
+<tr>
+
+[% content %]
+
+</table>
+
+</div>
+
+<div id="footer">[% PROCESS site/footer %]
+<!--
+<a href="/profile_sl/stop_profiling" > Stop Profiling</a> 
+-->
+</div>
+
+[% PROCESS site/piwik %] 

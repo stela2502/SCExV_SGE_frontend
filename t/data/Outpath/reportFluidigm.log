@@ -1,0 +1,3 @@
+2015-06-22 11:18:34:start perl  -I /storage/www/Genexpress/lib/ -I /home/stefan/LibsNewStructure/lib/  /home/slang/workspace/NGS_pipeline/bin/reportFluidigm.pl -workload_id 2
+Working in path /home/slang/workspace/NGS_pipeline/t/data/Outpath/shared_path/FluidigmRF_Test_Run
+Error GETing http://localhost:3000/randomforest/index/: Can't connect to localhost:3000 (Connection refused) at /home/slang/workspace/NGS_pipeline/t/../bin/reportFluidigm.pl line 144.

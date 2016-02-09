@@ -1,0 +1,6 @@
+Makefile 
+Makefile.old 
+MANIFEST.bak 
+blib/ 
+Outpath/
+tmp/
